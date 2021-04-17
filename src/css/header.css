@@ -1,0 +1,129 @@
+/* menu fixo no inicio */
+.header{
+    background-color: wheat;
+}
+.navmenu{
+    position: fixed;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 25px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+.navmenuclose{
+    position: fixed;
+    z-index: +1;
+    background: linear-gradient(to top right,#fc2c77 0%,#6c4079 100%);
+    color: whitesmoke;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px  rgb(0, 0, 0,60%);
+}
+
+.loginmenu{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: space-between;
+}
+.loginmenu button{
+    height: 25px;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 0px;
+    border: 0px;
+}
+.textslid{
+    color:whitesmoke;
+    font-size: 60px;
+    position:absolute;
+    top:320px;
+    left:5vw;
+    line-height: 60px;
+    animation: textslide 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+   
+   
+
+}
+.textslid strong{
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+    color: #fc2c77;
+}
+
+.titlemenu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-items: stretch;
+}
+.imgmenu{
+    width:100%;
+    height:auto;
+}
+.iconmenu{
+    height: 30px;
+    width: 30px;    
+}
+/*mobile */
+@media(max-width:640px) {
+    .navmenu{
+        font-size: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navmenuclose{
+        font-size: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .loginmenu{
+        position: relative;
+        float: none;
+        align-items: flex-start;
+        justify-items: center;
+    }
+    .loginmenu button{
+        font-size: 15px;
+        color: aquamarine;
+    }
+    .textslid{
+        position: absolute;
+        font-size: 22px;
+    }
+    .imgmenu{
+        width:100vw;
+        height:600px;
+    }
+}
+
+/* animation */
+@keyframes textslide {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+}

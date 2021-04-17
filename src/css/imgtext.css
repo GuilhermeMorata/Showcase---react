@@ -1,0 +1,56 @@
+.imgcontent{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.imgpure{
+    color: transparent;
+    width: 100%;
+    height: 100%; 
+    overflow:hidden; 
+    transition: 5s;
+     
+}
+.imgtext{
+    padding: 200px;
+    position: absolute;
+    text-align: center;
+    font-size:xx-large;
+    justify-self: center;
+    align-self: center;
+    opacity: 0%;
+    transition: 5s;
+}
+.imgcontent:hover img{
+
+    filter: blur(9px);
+    transform: scale(1.5);
+    
+}
+.imgtext:hover{
+    opacity: 100%;
+    color: black;
+}
+
+@media (max-width:800px) {
+    .imgcontent{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    
+    }
+    .imgpure{
+        width: 100%;
+        height: 400px;
+    }
+    .imgtext{
+        align-self: center;
+        text-align: center;
+        padding: 0px;
+        padding-top: 50px;
+        align-self: center;
+        font-size: xx-large;
+    }
+
+}

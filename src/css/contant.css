@@ -1,0 +1,140 @@
+.contantbox {
+    border-radius: 5px;
+    background-color: wheat;
+    padding: 10px;
+}
+.contantintro{
+    display: flex;
+    margin: 20px;
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.contantintro h1{
+    margin: 15px;
+}
+.contantintro p {
+    margin: 0px;
+}
+.contemail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    justify-content: space-around;
+}
+.iconemail{
+    height: 20em;
+    width: 50%;
+    fill: #fc2c77;
+  /*   cubic-bezier(0,1.95,.01,.82) */
+    animation: email 13s infinite cubic-bezier(0,1.95,0,10.0);
+}
+.contantform{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contantform input{
+    margin: 5px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    text-indent: 10px;
+}
+.contantform select{
+    height: 35px;
+}
+.contantform textarea{
+    height: 100px;
+}
+.contantform a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 25px;
+    align-self: center;
+    color: #fc2c77;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffff;
+    border: 5px solid whitesmoke;
+    border-radius: 25px;
+}
+
+/* mobile */
+@media (max-width:900px){
+    .contantbox{
+        padding: 15px;
+    }
+    .contantintro{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .contantintro h1{
+        font-size: 24px;
+    }
+    .contemail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconemail{
+        height: auto;
+    }
+    .contantform{
+        width: 100%;
+    }
+}
+
+/* animation */
+@keyframes email {
+    0%{
+      transform: translateX(0%);
+      transform: rotateX(0);
+     
+    }
+    5% {
+      transform: rotate(-1deg); 
+
+    }
+    7.5% {
+      transform: rotate(1deg);
+      
+    }
+    10%{
+        transform: rotate(-1deg);
+      
+      }
+    12.5%{
+        transform: rotate(1deg);
+    
+    }
+    15% {
+    transform: rotate(-1deg); 
+
+    }
+    17.5% {
+    transform: rotate(1deg);
+
+    }
+    20%{
+        transform: rotate(-1deg);
+
+    }
+    22.5%{
+        transform: rotate(1deg);
+
+    }
+    25%{
+        transform: rotate(0);
+        transform: rotateX(0);
+    }
+    100%{
+
+    }
+}

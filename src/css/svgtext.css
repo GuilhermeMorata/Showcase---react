@@ -1,0 +1,54 @@
+.svgmore{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 40px;
+    align-items: center;
+}
+.svgmore h1{
+    color: #fc2c77;
+}
+
+.svgmore span{
+    text-align: center;
+    line-height: 30px;
+    font-size: 28px;
+    padding: 30px;
+    word-break: keep-all;
+}
+.svgstyle {
+    fill: transparent;
+    border: transparent;
+    stroke-width: 20;
+    stroke: #fc2c77;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 8000;
+    animation: teste 6s linear forwards infinite;
+}
+@media (max-width:800px){
+    .svgmore{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .svgstyle{
+        width: 100%;
+    }
+}
+
+@keyframes teste {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 8000;
+    }
+    80%{
+        stroke-dashoffset:16000;
+    }
+    100%{
+        stroke-dashoffset:16000;
+        fill: #fc2c77;
+    
+    }
+}
